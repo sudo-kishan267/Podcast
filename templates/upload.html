@@ -4,7 +4,7 @@
 
 {% block body %}
 <div class="container py-4">
-    <form method="POST" action="/upload " >
+    <form method="POST" action="/upload " enctype="multipart/form-data" >
         {% csrf_token %}
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
@@ -23,7 +23,7 @@
             <label for="" class="form-label"></label>
         </div>
         <div class="input-group mb-3">
-            <input type="file" class="form-control" id="file" name="kishan" >
+            <input type="file" class="form-control" id="file" name="mp3" >
             <label class="input-group-text" for="file" >Upload</label>
         </div>
 

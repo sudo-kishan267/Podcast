@@ -6,6 +6,7 @@ from django.shortcuts import render, HttpResponse
 #added by me
 from datetime import datetime
 from django.contrib import messages
+from django.core.files.storage import FileSystemStorage
 
 # import your model here
 
@@ -24,8 +25,8 @@ def upload(request):
          name = request.POST.get('name')
          pname = request.POST.get('pname')
          email = request.POST.get('email')
-         mp3 = request.POST.get('mp3')
-         
+         mp3 = request.FILES['mp3']
+         fs=FileSystemStorage()
          info = uploads(name=name, pname=pname, email=email, mp3=mp3, date=datetime.today())
          info.save()
          
