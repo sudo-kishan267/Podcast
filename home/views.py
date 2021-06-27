@@ -24,9 +24,10 @@ def upload(request):
          name = request.POST.get('name')
          pname = request.POST.get('pname')
          email = request.POST.get('email')
-         mp3 = request.POST.get('mp3')
+         podcast=request.FILES['podcast']
+         fs=FileSystemStorage()
          
-         info = uploads(name=name, pname=pname, email=email, mp3=mp3, date=datetime.today())
+         info = uploads(name=name, pname=pname, email=email, podcast=podcast, date=datetime.today())
          info.save()
          
          messages.success(request, 'Podcast Uploaded !')
