@@ -1,5 +1,4 @@
 # Podcast
-# Internship-Website-
 
 **STATUS: This is Open Sourced Internship Website Template **
 
