@@ -23,5 +23,5 @@ Now we continue to run the host server
 
  
 ## Features
-- One can upload their own podcast 
-- one can listen already existed podcast uploaded by other users 
+- One can upload their own podcast.
+- one can listen already existed podcast uploaded by other users. 
