@@ -1,5 +1,6 @@
 from django.db.models.fields import files
-from home.models import uploads
+from home.models import audio
+from home.models import video
 from django.http.response import HttpResponse
 from django.shortcuts import render, HttpResponse 
  
@@ -18,22 +19,41 @@ def home(request):
     
     
 def listen(request):
-    return render(request,'listen.html')
+    mp3_list= audio.objects.all()
+    return render(request,'listen.html',{'mp3_list':mp3_list})
 
-def upload(request):
+def watch(request):
+    mp4_list= video.objects.all()
+    return render(request,'watch.html',{'mp4_list':mp4_list})
+
+def uploadmp3(request):
     if request.method =="POST" :
          name = request.POST.get('name')
          pname = request.POST.get('pname')
          email = request.POST.get('email')
          mp3 = request.FILES['mp3']
          fs=FileSystemStorage()
-         info = uploads(name=name, pname=pname, email=email, mp3=mp3, date=datetime.today())
+         info = audio(name=name, pname=pname, email=email, mp3=mp3, date=datetime.today())
          info.save()
          
          messages.success(request, 'Podcast Uploaded !')
 
-    return render(request,'upload.html')
+    return render(request,'uploadmp3.html')
 
+
+def uploadmp4(request):
+    if request.method =="POST" :
+         name = request.POST.get('name')
+         pname = request.POST.get('pname')
+         email = request.POST.get('email')
+         mp4 = request.FILES['mp3']
+         fs=FileSystemStorage()
+         info = video(name=name, pname=pname, email=email, mp4=mp4, date=datetime.today())
+         info.save()
+         
+         messages.success(request, 'Podcast Uploaded !')
+
+    return render(request,'uploadmp4.html')
 
 def about(request):
     return render(request,'about.html')

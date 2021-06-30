@@ -2,6 +2,12 @@
 
 **STATUS: This is Open Sourced Internship Website Template **
 
+
+
+
+
+
+
 ## How to use this
 
 First clone or [download the template](git@github.com:harshp77/Internship-Website-.git), that is the starting point for your site.

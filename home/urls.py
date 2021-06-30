@@ -10,8 +10,10 @@ from django.core.files.storage import FileSystemStorage
 urlpatterns = [
    path('', views.home, name ='home'),
    path('listen', views.listen, name ='listen'),
-   path('upload', views.upload, name ='upload'),
+   path('watch', views.watch, name ='watch'),
+   path('uploadmp3', views.uploadmp3, name ='uploadmp3'),
    path('about', views.about, name ='about'),
+   path('uploadmp4', views.uploadmp4, name ='uploadmp4'),
    
 ]
 # changed

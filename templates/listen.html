@@ -3,99 +3,34 @@
 {% block title %} Listen {% endblock title %}
 
 {% block body %}
-<div class="row " style="margin-top: 50px;">
-  
-  <div class="col-md-4">
+<div class="container my-5">       <!--Thumbnail-->
+<h1 class="my-6 text-center"><em><q>Listen to the amazing podcasts at just one tap</q></em></h1>
+      <div style="margin-top: 5%;" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        {% for mp3 in mp3_list %}
+        <div class="col" style="align-items: flex-start;">
 
-    <div class="card mb-4 shadow-sm">
-      <audio controls src="media\Happiness_in_This_Life_Audiobook_by_Pope_Francis_Oonagh_Stransky.mp3"></audio>
-      <div class="card-body">
-        <p class="card-text">Halka_Halka_Suroor_X_Raabta by kishan</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card mb-4 shadow-sm">
-      <audio controls src="media\Theme_of_Dilwale_DJ_Chetas_Mix.mp3"></audio>
-      <div class="card-body">
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card mb-4 shadow-sm">
-      <audio controls src="static\Halka_Halka_Suroor_X_Raabta_320PagalWorld.com.se.mp3"></audio>
+          <div class="card shadow-sm" >
+            <img width="320" height="240" src="https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/5ff5697805753_json_image_1609918840.webp" class="d-block w-100" alt="..."> 
+            
+            <div style="background-color: rgb(7, 216, 35);" class="card-body">
 
-      <div class="card-body">
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card mb-4 shadow-sm">
-      <audio controls src="static\Halka_Halka_Suroor_X_Raabta_320PagalWorld.com.se.mp3"></audio>
-      <div class="card-body">
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card mb-4 shadow-sm">
-      <audio controls src="static\Halka_Halka_Suroor_X_Raabta_320PagalWorld.com.se.mp3"></audio>
-      <div class="card-body">
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card mb-4 shadow-sm">
-      <audio controls src="static\Halka_Halka_Suroor_X_Raabta_320PagalWorld.com.se.mp3"></audio>
-      <div class="card-body">
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card mb-4 shadow-sm">
-      <audio controls src="static\Halka_Halka_Suroor_X_Raabta_320PagalWorld.com.se.mp3"></audio>
-      <div class="card-body">
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card mb-4 shadow-sm">
-      <audio controls src="static\Halka_Halka_Suroor_X_Raabta_320PagalWorld.com.se.mp3"></audio>
-      <div class="card-body">
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card mb-4 shadow-sm">
-      <audio controls src="static\Halka_Halka_Suroor_X_Raabta_320PagalWorld.com.se.mp3"></audio>
-      <div class="card-body">
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card mb-4 shadow-sm">
-      <audio controls src="static\Halka_Halka_Suroor_X_Raabta_320PagalWorld.com.se.mp3"></audio>
-      <div class="card-body">
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
+              <audio controls src="media\{{mp3.mp3}}"></audio>
+              
+              <strong>
+              <p style="text-align: center;" class="card-text">{{mp3.pname}}<br><em>-by {{mp3.name}}</em></p>
+              </strong>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        
+        
 
-</div>
+        
+
+        
+        
+        
+      </div>
+  </div>
 {% endblock body %}

@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+
+{% block title %} Watch {% endblock title %}
+
+{% block body %}
+<div class="container my-5">       <!--Thumbnail-->
+<h1 class="my-6 text-center"><em><q>Watch amazing podcasts at just one click</q></em></h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        {% for mp4 in mp4_list %}
+        <div class="col" style="align-items: flex-start;">
+
+          
+            <video controls width="412" height="335" src="media\{{mp4.mp4}}"></video>
+            <div class="card-body"style="background-color: aqua;">
+
+              
+              <p class="card-text">{{mp4.pname}}<br>-by {{mp4.name}}</p>
+              
+            </div>
+          
+        </div>
+        {% endfor %}
+        
+        
+
+      
+
+        
+        
+        
+      </div>
+  </div>
+{% endblock body %}
