@@ -1,6 +1,6 @@
 # Podcast
 
-**STATUS: This is Open Sourced Internship Website Template **
+**STATUS: This is Open Sourced Podcast Website Template **
 
 
 
@@ -28,3 +28,5 @@ Now we continue to run the host server
 
  
 ## Features
+One can upload their own podcast.
+one can listen already existed podcast uploaded by other users.
