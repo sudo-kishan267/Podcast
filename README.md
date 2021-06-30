@@ -6,13 +6,6 @@
 ![unknown (2)](https://user-images.githubusercontent.com/79148315/123927915-f4d1f400-d9aa-11eb-8286-2793a56d8e6e.png)
 ![unknown (1)](https://user-images.githubusercontent.com/79148315/123927841-dec43380-d9aa-11eb-8005-88c0021b4b25.png)
 
-
-
-
-
-
-
-
 ## How to use this
 
 First clone or [download the template](git@github.com:harshp77/Internship-Website-.git), that is the starting point for your site.
@@ -30,5 +23,9 @@ Now we continue to run the host server
 ## Features
 - One can upload their own podcast or vodcast.
 - One can listen already existed podcast or vodcast uploaded by other users.
-
+- 
 ## How to navigate through Website
+- From the home page you can upload your own Podcast and Vodcast from upload podcasts and upload vodcasts option.
+- you can listen podcast which are uploaded by other users by clicking on the listen button.
+- you can even watch vodcast by clicking on the watch button.
+- If you want to contact us or if you have any query you can go to about section for your contact details. 
