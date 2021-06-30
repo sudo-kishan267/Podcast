@@ -22,11 +22,6 @@ Now we continue to run the host server
  - [ ] For any further changes to website change the templates folder provided in the repository
  - [ ] Make sure to save the further changes via commands ``` python manage.py make migrations ``` and ``` python manage.py migrate ```
   
-  
-# Podcast
-
-
- 
 ## Features
-One can upload their own podcast.
-one can listen already existed podcast uploaded by other users.
+- One can upload their own podcast or vodcast.
+- One can listen already existed podcast or vodcast uploaded by other users.
