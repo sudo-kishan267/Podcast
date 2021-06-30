@@ -7,6 +7,7 @@
 
 
 ## How to use this
+![unknown (3)](https://user-images.githubusercontent.com/79148315/123952035-150dad00-d9c3-11eb-9405-bfec172a07a1.png)
 
 First clone or [download the template](git@github.com:harshp77/Internship-Website-.git), that is the starting point for your site.
 
