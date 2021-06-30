@@ -1,10 +1,10 @@
 # Podcast
 
 **STATUS: This is Open Sourced Podcast Website Template **
-![image](https://user-images.githubusercontent.com/76595496/123920376-80e01d80-d9a3-11eb-90cf-dff6caef6828.png)
 ![unknown](https://user-images.githubusercontent.com/79148315/123927675-b5a3a300-d9aa-11eb-9f7b-89b5003111a2.png)
 ![unknown (2)](https://user-images.githubusercontent.com/79148315/123927915-f4d1f400-d9aa-11eb-8286-2793a56d8e6e.png)
 ![unknown (1)](https://user-images.githubusercontent.com/79148315/123927841-dec43380-d9aa-11eb-8005-88c0021b4b25.png)
+
 
 ## How to use this
 
