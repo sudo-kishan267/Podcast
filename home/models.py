@@ -8,7 +8,7 @@ class audio(models.Model) :                      # audio database for podcasts
      mp3 = models.FileField(default="media")
      date = models.DateField() 
 
-     def __str__(self) :
+     def __str__(self) :          
           return self.name
 class video(models.Model) :                         # video database for podcasts
      name = models.CharField(max_length=100)
