@@ -21,6 +21,6 @@ from django.urls.conf import include
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('',include('home.urls'))
+    path('admin/', admin.site.urls),         # anyone with path as admin will be sent to admin site
+    path('',include('home.urls'))            # added all urls in urls.py of our home app
 ] 

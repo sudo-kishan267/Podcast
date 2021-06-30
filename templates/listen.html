@@ -1,4 +1,4 @@
-{% extends 'base.html'%}
+{% extends 'base.html'%}   <!--loading basic html layout -->
 
 {% block title %} Listen {% endblock title %}
 
@@ -6,7 +6,7 @@
 <div class="container my-5">       <!--Thumbnail-->
 <h1 class="my-6 text-center"><em><q>Listen to the amazing podcasts at just one tap</q></em></h1>
       <div style="margin-top: 5%;" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        {% for mp3 in mp3_list %}
+        {% for mp3 in mp3_list %}      <!-- iterating through the dictionary mp3_list -->     
         <div class="col" style="align-items: flex-start;">
 
           <div class="card shadow-sm" >

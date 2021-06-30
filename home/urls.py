@@ -8,6 +8,7 @@ from django.conf.urls.static import static
 from django.core.files.storage import FileSystemStorage
 
 urlpatterns = [
+   # added all the respective paths for routing to appropriate view functions
    path('', views.home, name ='home'),
    path('listen', views.listen, name ='listen'),
    path('watch', views.watch, name ='watch'),

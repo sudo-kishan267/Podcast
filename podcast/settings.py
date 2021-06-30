@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'home.apps.HomeConfig',
+    'home.apps.HomeConfig',               # regitered our home app
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'podcast.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,"templates")],
+        'DIRS': [os.path.join(BASE_DIR,"templates")],   # adding templates to root(base) directory
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,10 +125,10 @@ STATIC_URL = '/static/'
 #Added by me
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    BASE_DIR / "static",             # added static to root directory
     
     ] 
 
-# addede for file to upload
-MEDIA_ROOT  = os.path.join(BASE_DIR, 'media')
+
+MEDIA_ROOT  = os.path.join(BASE_DIR, 'media')       # added media to root directory
 MEDIA_URL = '/media/'
