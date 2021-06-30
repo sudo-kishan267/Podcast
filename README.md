@@ -1,6 +1,8 @@
 # Podcast
 
 **STATUS: This is Open Sourced Podcast Website Template **
+![image](https://user-images.githubusercontent.com/76595496/123920376-80e01d80-d9a3-11eb-90cf-dff6caef6828.png)
+
 
 
 
@@ -25,3 +27,5 @@ Now we continue to run the host server
 ## Features
 - One can upload their own podcast or vodcast.
 - One can listen already existed podcast or vodcast uploaded by other users.
+
+## How to navigate through Website
